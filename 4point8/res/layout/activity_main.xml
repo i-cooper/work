@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/artcle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+<CheckBox 
+    android:id="@+id/agrreId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20px"
+    android:text="@string/agrre"
+    android:button="@drawable/check_box"
+    />
+<ImageButton 
+    android:id="@+id/start"
+    android:src="@drawable/button_state"
+    android:background="#0000"
+    android:paddingTop="5px"
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+
+</LinearLayout>
