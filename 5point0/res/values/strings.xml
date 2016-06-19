@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="app_name">5point0</string>
-    <string name="hello_world">Hello world!</string>
-<string name="gameTitle">猜猜鸡蛋在哪个鞋子里</string>
-<string name="successTitle">恭喜您，猜对了，祝您幸福</string>
-<string name="failTitle">抱歉，您猜错了，点击重玩</string>
-</resources>
