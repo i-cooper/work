@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/initem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="收入管理"
+            android:id="@+id/tvTitle"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+          android:layout_marginTop="10dp"
+         >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+             >
+
+            <TextView
+                android:id="@+id/tvInmoney"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="金额："
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/txInmoney"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/tvInmoney"
+                android:layout_toRightOf="@id/tvInmoney"
+                android:gravity="bottom"
+                android:hint="0.0"
+                android:inputType="number"
+                android:maxLength="8"
+                android:numeric="integer" />
+
+            <TextView
+                android:id="@+id/tvInTime"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInmoney"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="时间："
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/txInTime"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/tvInTime"
+                android:layout_below="@id/txInmoney"
+                android:layout_toRightOf="@id/tvInTime" />
+
+            <TextView
+                android:id="@+id/tvInType"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInTime"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="类别："
+                android:textSize="25dp" />
+
+            <Spinner
+                android:id="@+id/txInType"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/tvInType"
+                android:layout_below="@id/txInTime"
+                android:layout_toRightOf="@id/tvInType"
+                android:entries="@array/intype"
+                 />
+
+            <TextView
+                android:id="@+id/tvInHandler"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/tvInType"
+                android:layout_below="@id/tvInType"
+                android:layout_marginTop="10dp"
+                android:text="付款方："
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txInHandler"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/tvInHandler"
+                android:layout_below="@id/txInType"
+                android:layout_toRightOf="@id/tvInHandler"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/tvInMark"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInHandler"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="备注："
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/txInMark"
+                android:layout_width="210dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@id/tvInMark"
+                android:layout_below="@id/txInHandler"
+                android:layout_toRightOf="@id/tvInMark"
+                android:singleLine="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btUpdate"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:text="修改" />
+
+            <Button
+                android:id="@+id/btRemove"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btUpdate"
+                android:layout_toLeftOf="@id/btUpdate"
+                android:text="删除" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
