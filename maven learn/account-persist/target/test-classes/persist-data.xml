@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<account-persist> 
+  <accounts>
+    <id>
+      <id>juven</id>
+      <name>Lee</name>
+      <email>backthe@162.com</email>
+      <password>thisispassword</password>
+      <activated>true</activated>
+    </id>
+  </accounts> 
+</account-persist>
